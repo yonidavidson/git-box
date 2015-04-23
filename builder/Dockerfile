@@ -10,8 +10,10 @@ FROM alpine
 MAINTAINER yoni davidson
 
 # Update the repository sources list
-RUN apk --update add git 
+RUN apk --update add git && \ 
 rm -rf /tmp/src && \
 rm -rf /var/cache/apk/*  
+
+ADD ./addons/.gitconfig /root/
 
 ENTRYPOINT  /bin/sh  

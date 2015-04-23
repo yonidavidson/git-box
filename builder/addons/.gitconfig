@@ -1,0 +1,25 @@
+[alias]
+	st = status
+	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+	pr = pull --rebase
+	fe = submodule foreach --recursive
+	mt = mergetool
+[diff]
+	color = auto
+	tool = 
+[status]
+	color = auto
+[branch]
+	color = auto
+[core]
+	autocrlf = false
+	editor = 
+[user]
+	name = 
+	email = 
+[color]
+	ui = auto
+[merge]
+	tool = 
+[gitreview]
+	username = 
